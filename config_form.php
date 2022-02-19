@@ -150,7 +150,7 @@
 						?>
 						<li><?php
 							echo $view->formCheckbox('defaultsort_excluded_collections[]', $collectionId,
-								array('checked'=> in_array($collectionId, $currentExludedCollections) ? 'checked' : '')
+								array('checked'=> in_array($collectionId, $currentExludedCollections, false) ? 'checked' : '')
 							) . ' ' . $collectionTitle;
 						?>
 						</li><?php
