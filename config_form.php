@@ -136,7 +136,7 @@
 	<div class="inputs five columns omega">
 		<div class="input-block">
 			<?php
-			$currentExludedCollections = unserialize(get_option('defaultsort_excluded_collections'));
+			$currentExcludedCollections = unserialize(get_option('defaultsort_excluded_collections'));
 			if(empty($collections)) :?>
 			<?php echo __('There are no public Collections at the moment.'); ?>
 
